@@ -4,7 +4,9 @@
 	],
 	"11-20":[],
 	"21-30":[],
-	"31-40":[],
+	"31-40":[
+		{"id":"34", "name":"Search for a Range", "tags":["Array","Binary Search"], "run_time":"132", "difficulty":"Medium"}
+	],
 	"41-50":[],
 	"51-60":[],
 	"61-70":[],
