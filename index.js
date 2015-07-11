@@ -20,6 +20,17 @@ app.controller('AppCtrl', function($scope, $mdSidenav, $http, $rootScope){
 			}
 		},$rootScope.sets);
 	});
+	$scope.toggleSidenav = function(menuId) {
+		$mdSidenav(menuId).toggle();
+	};
+
+	$scope.openSidenav = function(menuId) {
+		$mdSidenav(menuId).open();
+	};
+
+	$scope.closeSidenav = function(menuId) {
+		$mdSidenav(menuId).close();
+	};
 });
 
 app.controller('SideNavCtrl', function($scope, $mdSidenav, $http, $rootScope){
