@@ -25,7 +25,8 @@
 	"191-200":[],
 	"201-210":[],
 	"211-220":[
-		{"id":"217", "name":"Contains Duplicate", "tags":["Array","Hash Table"], "run_time":"132", "difficulty":"Easy"}
+		{"id":"217", "name":"Contains Duplicate", "tags":["Array","Hash Table"], "run_time":"132", "difficulty":"Easy"},
+		{"id":"219", "name":"Contains Duplicate II", "tags":["Array","Hash Table"], "run_time":"124", "difficulty":"Easy"}
 	],
 	"221-230":[
 		{"id":"226", "name":"Invert Binary Tree", "tags":["Tree"], "run_time":"128", "difficulty":"Easy"}
