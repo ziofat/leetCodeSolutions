@@ -1,0 +1,10 @@
+{
+	"226":{
+		"desc":[
+			"Invert a binary tree."
+		],
+		"input":"(tree)",
+		"output":"(tree)",
+		"source":"invertTree.js"
+	}
+}
