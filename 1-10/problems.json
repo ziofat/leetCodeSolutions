@@ -8,5 +8,13 @@
 		"input":"numbers={2, 7, 11, 15}, target=9",
 		"output":"index1=1, index2=2",
 		"source":"twoSum.js"
+	},
+	"3":{
+		"desc":[
+			"Given a string, find the length of the longest substring without repeating characters. For example, the longest substring without repeating letters for \"abcabcbb\" is \"abc\", which the length is 3. For \"bbbbb\" the longest substring is \"b\", with the length of 1."
+		],
+		"input":"s=\"abcabcbb\"",
+		"output":"length=3",
+		"source":"lengthOfLongestSubstring.js"
 	}
 }
