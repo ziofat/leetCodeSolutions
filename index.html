@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>LeetCode Solutions</title>
-	<link rel="stylesheet" href="statics/angular-material.min.css?v=0.10.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.10.0/angular-material.min.js">
 	<link rel="stylesheet" href="statics/RobotoDraft.css">
 	<link rel="stylesheet" href="all.css">
 	<meta name="viewport" content="initial-scale=1,user-scalable=no,width=device-width" />
@@ -73,13 +73,13 @@
 								<h2 class="md-title">This problem has tags:</h2>
 								<div><md-chips ng-model="problem.tags" readonly="true"></md-chips></div>
 								<p>Run time: {{problem.run_time}} ms</p>
-								<pre>{{problem.source}}</pre>
-							</div>
-							<div layout="column" flex="50" layout-padding>
 								<h2 class="md-title">Description({{problem.difficulty}})</h2>
 								<p ng-repeat="line in problem.desc">{{line}}</p>
 								<p ng-if="problem.input"><strong>Input</strong>:{{problem.input}}</p>
 								<p ng-if="problem.output"><strong>Output</strong>:{{problem.output}}</p>
+							</div>
+							<div layout="column" flex="50" layout-padding>
+								<pre><code>{{problem.source}}</code></pre>
 							</div>
 						</div>
 					</md-content>
@@ -89,10 +89,11 @@
 	</div>
 </md-content>
 <!-- Angular Material Dependencies -->
-<script src="statics/angular.min.js"></script>
-<script src="statics/angular-animate.min.js"></script>
-<script src="statics/angular-aria.min.js"></script>
-<script src="statics/angular-material.min.js?v=0.10.0"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-animate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-aria.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.10.0/angular-material.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
 <script src="index.js"></script>
 </body>
 </html>

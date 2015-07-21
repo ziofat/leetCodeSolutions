@@ -55,6 +55,7 @@ app.controller('SideNavCtrl', function($scope, $mdSidenav, $http, $rootScope){
 				$http.get(set.belong+"/"+source).success(function(responseSource){
 					$rootScope.problems[index[j]].source = responseSource;
 					j++;
+					hljs.initHighlightingOnLoad();
 				});
 			};
 		});
