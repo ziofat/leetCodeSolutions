@@ -1,10 +1,10 @@
-var app = angular.module('leetcode', ['ngMaterial'])
+var app = angular.module('leetcode', ['ngMaterial','hljs'])
 .config(function($mdThemingProvider) {
 	$mdThemingProvider.theme('default')
 		.primaryPalette('blue')
 		.accentPalette('red')
 });
-
+hljs.initHighlightingOnLoad();
 app.controller('AppCtrl', function($scope, $mdSidenav, $http, $rootScope){
 	$rootScope.sets = [];
 	$rootScope.problems = [];
@@ -31,6 +31,7 @@ app.controller('AppCtrl', function($scope, $mdSidenav, $http, $rootScope){
 	$scope.closeSidenav = function(menuId) {
 		$mdSidenav(menuId).close();
 	};
+
 });
 
 app.controller('SideNavCtrl', function($scope, $mdSidenav, $http, $rootScope){
@@ -55,7 +56,6 @@ app.controller('SideNavCtrl', function($scope, $mdSidenav, $http, $rootScope){
 				$http.get(set.belong+"/"+source).success(function(responseSource){
 					$rootScope.problems[index[j]].source = responseSource;
 					j++;
-					hljs.initHighlightingOnLoad();
 				});
 			};
 		});

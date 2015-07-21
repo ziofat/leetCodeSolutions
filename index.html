@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>LeetCode Solutions</title>
-	<link rel="stylesheet" href="statics/angular-material.min.js">
+	<link rel="stylesheet" href="statics/angular-material.min.css">
 	<link rel="stylesheet" href="statics/RobotoDraft.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+	<link rel="stylesheet" href="statics/monokai_sublime.css">
 	<link rel="stylesheet" href="all.css">
 	<meta name="viewport" content="initial-scale=1,user-scalable=no,width=device-width" />
 	<meta name="theme-color" content="#2196f3"/>
@@ -80,7 +80,7 @@
 								<p ng-if="problem.output"><strong>Output</strong>:{{problem.output}}</p>
 							</div>
 							<div layout="column" flex="50" layout-padding>
-								<pre><code>{{problem.source}}</code></pre>
+								<div hljs source="problem.source"></div>
 							</div>
 						</div>
 					</md-content>
@@ -94,7 +94,8 @@
 <script src="statics/angular-animate.min.js"></script>
 <script src="statics/angular-aria.min.js"></script>
 <script src="statics/angular-material.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script src="statics/highlight.pack.js"></script>
+<script src="statics/angular-highlightjs.min.js"></script>
 <script src="index.js"></script>
 </body>
 </html>
