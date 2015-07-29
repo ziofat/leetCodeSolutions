@@ -44,6 +44,7 @@ app.controller('SideNavCtrl', function($scope, $mdSidenav, $http, $rootScope){
 		$rootScope.currentSet = set;
 		$rootScope.problems = [];
 		$rootScope.problems = set.questions;
+		$mdSidenav('left').close()
 		$http.get(set.belong+"/problems.json").success(function(response){
 			var index = [];
 			var j = 0;

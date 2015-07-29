@@ -25,7 +25,7 @@
 				</div>
 			</div>
 			<md-content layout="column">
-				<md-subheader class="md-primary">Problems Group (by id)</md-subheader>
+				<md-subheader class="md-primary">Problems Groups (by id)</md-subheader>
 				<md-list>
 					<md-list-item ng-repeat="set in sets" ng-click="showSet(set)">
 						<md-icon md-font-set="material-icons"> assessment </md-icon>
@@ -43,7 +43,7 @@
 				</md-button>
 				<h1 class="md-toolbar-tools" layout-align-gt-sm="center">LeetCode OJ Solutions</h1>
 				<span flex></span>
-				<div layout-padding layout="row" show-gt-sm>
+				<div layout-padding layout="row" hide show-gt-md >
 					<md-button class="md-icon-button" ng-href="mailto:i@ziofat.me" aria-label="mail">
 						<md-icon md-font-set="material-icons"> email </md-icon>
 					</md-button>
@@ -69,8 +69,8 @@
 			<md-tabs md-dynamic-height md-border-bottom ng-if="!isHome">
 				<md-tab label="{{problem.name}}" ng-repeat="problem in problems">
 					<md-content class="md-padding" layout="column">
-						<div layout="row">
-							<div layout="column" flex="50" layout-padding>
+						<div layout-gt-md="row" layout="column">
+							<div layout="column" flex-gt-md="50" layout-padding>
 								<h2 class="md-title">This problem has tags:</h2>
 								<div><md-chips ng-model="problem.tags" readonly="true"></md-chips></div>
 								<p>Run time: {{problem.run_time}} ms</p>
@@ -79,7 +79,7 @@
 								<p ng-if="problem.input"><strong>Input</strong>:{{problem.input}}</p>
 								<p ng-if="problem.output"><strong>Output</strong>:{{problem.output}}</p>
 							</div>
-							<div layout="column" flex="50" layout-padding>
+							<div layout="column" flex-gt-md="50" layout-padding>
 								<div hljs source="problem.source"></div>
 							</div>
 						</div>
