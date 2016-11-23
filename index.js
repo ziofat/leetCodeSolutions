@@ -32,6 +32,12 @@ app.controller('AppCtrl', function($scope, $mdSidenav, $http, $rootScope){
 		$mdSidenav(menuId).close();
 	};
 
+	$scope.selectProblem = function(problem) {
+		$http.get($rootScope.currentSet.belong+"/"+problem.sourceFile).success(function(responseSource){
+			problem.source = responseSource;
+		});
+	}
+
 });
 
 app.controller('SideNavCtrl', function($scope, $mdSidenav, $http, $rootScope){
@@ -52,12 +58,7 @@ app.controller('SideNavCtrl', function($scope, $mdSidenav, $http, $rootScope){
 				$rootScope.problems[i].desc = response[$rootScope.problems[i].id].desc;
 				$rootScope.problems[i].input = response[$rootScope.problems[i].id].input;
 				$rootScope.problems[i].output = response[$rootScope.problems[i].id].output;
-				var source = response[$rootScope.problems[i].id].source;
-				index[i] = i;
-				$http.get(set.belong+"/"+source).success(function(responseSource){
-					$rootScope.problems[index[j]].source = responseSource;
-					j++;
-				});
+				$rootScope.problems[i].sourceFile = response[$rootScope.problems[i].id].source;
 			};
 		});
 	}

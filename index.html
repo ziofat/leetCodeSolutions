@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>LeetCode Solutions</title>
-	<link rel="stylesheet" href="statics/angular-material.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css">
 	<link rel="stylesheet" href="statics/RobotoDraft.css">
 	<link rel="stylesheet" href="statics/monokai_sublime.css">
 	<link rel="stylesheet" href="all.css">
@@ -67,7 +67,7 @@
 				<p>I like to use Javascript, because it is easy to test (in browser) and flexable syntax.</p>
 			</md-content>
 			<md-tabs md-dynamic-height md-border-bottom ng-if="!isHome">
-				<md-tab label="{{problem.name}}" ng-repeat="problem in problems">
+				<md-tab label="{{problem.name}}" ng-repeat="problem in problems" md-on-select="selectProblem(problem)">
 					<md-content class="md-padding" layout="column">
 						<div layout-gt-md="row" layout="column">
 							<div layout="column" flex-gt-md="50" layout-padding>
@@ -90,10 +90,10 @@
 	</div>
 </md-content>
 <!-- Angular Material Dependencies -->
-<script src="statics/angular.min.js"></script>
-<script src="statics/angular-animate.min.js"></script>
-<script src="statics/angular-aria.min.js"></script>
-<script src="statics/angular-material.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-aria.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.js"></script>
 <script src="statics/highlight.pack.js"></script>
 <script src="statics/angular-highlightjs.min.js"></script>
 <script src="index.js"></script>
