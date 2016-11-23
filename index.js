@@ -60,6 +60,10 @@ app.controller('SideNavCtrl', function($scope, $mdSidenav, $http, $rootScope){
 				$rootScope.problems[i].output = response[$rootScope.problems[i].id].output;
 				$rootScope.problems[i].sourceFile = response[$rootScope.problems[i].id].source;
 			};
+
+			$http.get(set.belong + "/" + $rootScope.problems[0].sourceFile).success(function(responseSource){
+				$rootScope.problems[0].source = responseSource;
+			});
 		});
 	}
 });
