@@ -2,7 +2,8 @@
 	"1-10":[
 		{"id":"1", "name":"Two Sum", "tags":["Array","Hash Table"], "run_time":"128", "difficulty":"Medium"},
 		{"id":"2", "name":"Add Two Numbers", "tags":["Linked List","Math"], "run_time":"185", "difficulty":"Medium"},
-		{"id":"3", "name":"Longest Substring Without Repeating Characters", "tags":["Hash Table","Two Pointers","String"], "run_time":"212", "difficulty":"Medium"}
+		{"id":"3", "name":"Longest Substring Without Repeating Characters", "tags":["Hash Table","Two Pointers","String"], "run_time":"212", "difficulty":"Medium"},
+		{"id":"5", "name":"ZigZag Conversion", "tags":["String"], "run_time":"149", "difficulty":"Medium"}
 	],
 	"11-20":[],
 	"21-30":[],
